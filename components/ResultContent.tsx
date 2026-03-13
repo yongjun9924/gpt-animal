@@ -6,7 +6,7 @@ import { decodeResult } from "@/lib/encode";
 import AnimalCard from "@/components/AnimalCard";
 import ShareButtons from "@/components/ShareButtons";
 
-const CUSTOM_GPT_URL = "https://chatgpt.com/g/gpt-animal-test";
+const CUSTOM_GPT_URL = "https://chatgpt.com/g/g-69b426cac6d88191b70af7f1ae62583a-naneun-eoddeon-dongmulilgga";
 
 function ResultInner() {
   const searchParams = useSearchParams();
