@@ -6,8 +6,6 @@ import { decodeResult } from "@/lib/encode";
 import AnimalCard from "@/components/AnimalCard";
 import ShareButtons from "@/components/ShareButtons";
 
-const CUSTOM_GPT_URL = "https://chatgpt.com/g/g-69b426cac6d88191b70af7f1ae62583a-naneun-eoddeon-dongmulilgga";
-
 function ResultInner() {
   const searchParams = useSearchParams();
   const data = searchParams.get("d");
@@ -60,7 +58,7 @@ function ResultInner() {
       <div className="w-full max-w-md space-y-6">
         <div className="text-center">
           <h1 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">
-            GPT 동물 테스트 결과
+            동물 성격 테스트 결과
           </h1>
         </div>
 
@@ -72,16 +70,14 @@ function ResultInner() {
         />
 
         <a
-          href={CUSTOM_GPT_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/quiz"
           className="block w-full text-center py-4 px-6 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold text-lg rounded-2xl shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
         >
           🐾 나도 해보기!
         </a>
 
         <p className="text-center text-xs text-gray-400">
-          ChatGPT 메모리 기반 동물 성격 분석
+          10가지 질문으로 알아보는 동물 성격 테스트
         </p>
       </div>
     </main>
